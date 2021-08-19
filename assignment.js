@@ -113,7 +113,7 @@ function renderTodo()
                         <ul class="card-ul">
                         </ul>
                         <div class="footer">
-                            <button class="card-button" onclick="removeToDo(this)" ><i class="fa fa-trash-o fa-2x fa-cog" aria-hidden="true"></i></button>
+                            <button class="card-button" onclick="removeToDo(this)" ><i class="fa fa-trash fa-2x fa-cog" aria-hidden="true"></i></button>
                             <button class="card-button" onclick="toggleitem(this)" ><i class="fa fa-plus fa-2x fa-cog" aria-hidden="true"></i></button>
                         </div>`
         list.append(node);
