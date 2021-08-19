@@ -1,0 +1,67 @@
+<head>
+    <html>
+    <title>ToDo</title>
+    <link href="../font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="./assignment.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </html>
+    <body>
+        <div class="container">
+            <div class="header"> 
+                <div style="color:white">Tasks List</div>
+                <div style="color:white"><button onclick="toggle()" style="height:40px;width:40px;border:0;border-radius: 50%;background-color:rgb(245, 105, 105);"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button> Add Item</div>
+            </div>
+            <div class="card-container"></div>
+            <div style="color:white" class="noitem">No items in the Todo List</div>
+        </div>
+        <div class="container1">
+            <div class="header1">
+                <div style="color:white" onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</div>
+                
+            </div>
+            <div class="card-dontainer1">
+                <div class="card1">
+                    <div class="card-heading1">
+                        <p id="para-heading1"></p>
+                        <hr>
+                    </div>
+                    <ul class="card-ul1">
+                        <li style="margin-bottom: 5px;"><p style="display:inline-block;margin:0"></p><button class="markdone" >markdone</button></li>
+                        <li style="margin-bottom: 5px;"><p style="display:inline-block;margin:0"></p><button class="markdone" >markdone</button></li>
+                    </ul>
+                    <div style="overflow: hidden;">
+                        <button class="card-button1" onclick="toggleitem(this)"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
+                        <button class="card-button1" onclick="removeToDo(this)"><i class="fa fa-trash-o fa-2x " aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-list">
+            <div style="margin-top:5px;margin-bottom: 10px;">Add New List</div>
+            <div style="margin-bottom: 10px;"><input type="text" id="heading"></div>
+            <div style="margin-bottom: 10px;" class="buttons">
+                <div class="list-button">
+                    <buton class="button" onclick="addToDo()">Add</buton>
+                </div>
+                <div class="list-button">
+                    <buton class="button" onclick="toggle()">Close</buton>
+                </div>
+            </div>
+        </div>
+        <div class="pop-item">
+            <div style="margin-top:5px;margin-bottom: 10px;">Add New Item</div>
+            <div style="margin-bottom: 10px;"><input type="text" id="sub-heading"></div>
+            <div style="margin-bottom: 10px;" class="buttons">
+                <div class="list-button">
+                    <buton class="button" onclick="subToDo()">Add</buton>
+                </div>
+                <div class="list-button">
+                    <buton class="button" onclick="toggleitem()">Close</buton>
+                </div>
+            </div>
+        </div>
+        <script src="./assignment.js"></script>
+    </body>
+</head>

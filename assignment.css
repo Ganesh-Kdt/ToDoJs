@@ -1,0 +1,263 @@
+body{
+    font-size: 32px;
+    background-color: black;
+    
+}
+.noitem.hidden
+{
+    visibility:hidden;
+}
+.container{
+    width:70%;
+    margin:auto;
+   
+}
+.blur{
+    filter: blur(10px);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top:20px;
+   
+}
+.card-container
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   
+}
+.card
+{
+    min-height: 350px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    border:1px solid rgb(245, 105, 105);
+    background-color:white;
+    margin-bottom: 20px;
+}
+.card-heading{
+    text-align: center;
+    margin-bottom:0px
+}
+hr{
+    margin-bottom: 0%;
+}
+.card-ul
+{
+    padding: 0px;
+    text-align: center;
+    font-size: 0.7em;
+    list-style-type: none;
+}
+
+.markdone
+{
+    cursor:pointer;
+    border-radius:5px;
+    border:0px;
+    background-color:rgb(164, 164, 243);
+}
+.markcompleted
+{
+    text-decoration: line-through;
+    color: red;
+}
+.card-button
+{
+    cursor:pointer;
+    float:right;
+    margin:10px;
+    height:50px;
+    width:50px;
+    background-color:rgb(245, 105, 105);
+    border:0px;
+    border-radius:50%;
+}
+.pop-list
+{
+    background-color:white;
+    border-radius: 10px;
+    border:1px solid rgb(245, 105, 105);
+    box-shadow: 10px 10px 8px grey;
+    width:30%;
+    text-align:center;
+    position: absolute;
+    top:200px;
+    left:500px;
+    visibility: hidden;
+    
+}
+
+.pop-item
+{
+    background-color:white;
+    border-radius: 10px;
+    border:1px solid rgb(245, 105, 105);
+    box-shadow: 10px 10px 8px grey;
+    width:30%;
+    text-align:center;
+    position: absolute;
+    top:200px;
+    left:500px;
+    visibility: hidden;
+ 
+}
+.active{
+    visibility: visible;
+}
+.buttons
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:auto;
+    width:60%;
+    height:45px;
+}
+.list-button
+{
+    background-color: chartreuse;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+.button
+{
+    display: inline-block;
+    height:100%;
+    width:100px;
+    
+}
+.container1
+    {
+        width:50%;
+        margin:auto;
+       
+    }
+.card1
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:40%;
+        margin: auto;
+        text-align: center;
+        min-height: 350px;
+        border-radius: 10px;
+        border:1px solid rgb(245, 105, 105);
+        background-color:white;
+    }
+    .header1
+    {
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card-ul1
+    {
+        padding: 0;
+        list-style-type: none;
+        margin:0
+    }
+    .card-button1
+    {
+        cursor:pointer;
+        float:right;
+        margin:10px;
+        height:50px;
+        width:50px;
+        background-color:rgb(245, 105, 105);
+        border:0px;
+        border-radius:50%;
+    }
+    
+
+
+@media only screen and (max-width: 600px)
+{
+    .container{
+        width:80%;
+    }
+    .card{
+        min-height: 40px;
+        width:100%
+    }
+    .footer
+    {
+        display:none;
+    }
+    .card-ul
+    {
+        display: none;
+    }
+    .container1
+    {
+        width:80%;
+        margin:auto
+    }
+    .card-hr{
+        display: none;
+    }
+    .card1
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:60%;
+        margin: auto;
+        text-align: center;
+        min-height: 350px;
+        border-radius: 10px;
+        border:1px solid rgb(245, 105, 105);
+        background-color:white;
+    }
+    .header1
+    {
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card-ul1
+    {
+        padding: 0;
+        list-style-type: none;
+        margin:0
+    }
+    .card-button1
+    {
+        cursor:pointer;
+        float:right;
+        margin:10px;
+        height:50px;
+        width:50px;
+        background-color:rgb(245, 105, 105);
+        border:0px;
+        border-radius:50%;
+    }
+    .pop-list
+    {
+        width:80%;
+        position: fixed;
+        top:40%;
+        left:10%;
+        background-color:white;
+    }
+    .pop-item
+    {
+        width:80%;
+        position: fixed;
+        top:40%;
+        left:10%;
+        background-color:white;
+    }
+}
